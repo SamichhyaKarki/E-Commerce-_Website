@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style.css">
+    <title>WeebHub - Contact us</title>
+    <link rel="stylesheet" href="./Style.css">
+<style>
+    /* CONTENT CSS FLEX */
+    .content{
+        display: flex;
+        justify-content: center;
+        margin-top: 3em;
+        background-color: #192436;
+        padding-top: 2em;
+        margin-top: -.2em;
+    }
+
+    .form{
+        margin: 1em;
+        border-radius: 1em;
+        margin-right: 9em;
+        padding: 3em;
+        border: 2px black solid;
+        background-image: linear-gradient(blue
+    , red);
+    }
+
+    .form input[type = "text"]{
+        margin-bottom: 1em;
+        width: 100%;
+        border-radius: 1em;
+        height: 2em;
+    }
+
+    .form textarea{
+        border-radius: 1em;
+        border: 2px black solid;
+        width: 100%;
+    }
+
+    .info{
+        border: 2px black solid;
+        padding: 2em;
+        border-radius: 1em;
+        height: 23em;
+        background-image: linear-gradient(red, blue);
+    }
+
+    .info .row1{
+        margin-bottom: 3em;
+        border-radius: 2em;
+        box-shadow: 0em 0em 0.5em;
+        padding: 0.5em 1em 1em 1em;
+        margin-top: -1em;
+    }
+
+    .sub:hover{
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <!-- company logo and navigation bar -->
+        <div class="logo">
+            <img src="./Logo/Logo.png" alt="company">
+        </div>
+        <!-- NAV BAR -->
+        <div class="nav">
+            <nav>
+                <a href="./Home.html">Home</a>
+                <a href="./Product.html">Products</a>
+                <a href="./Blog.html">Blog</a>
+                <a href="./Research.html">Research</a>
+                <a href="./Contactus.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        <!-- CONTENT -->
+        <div class="form">
+            <h2>Message Us</h2>
+            <p id="wrnng"></p>
+            <input type="text" name="Name" id="name" placeholder="Full Name"> <br>
+            <input type="text" name="Email" id="mail" placeholder="Email"> <br>
+            <textarea name="Message" id="msg" cols="30" rows="10" placeholder="Your message!"></textarea>
+            <span style="padding: .2em; background-color: blue; border-radius: 1em; border: 2px black solid;" class="sub" onclick="submit()">SUBMIT</span>
+        </div>
+        <!--CONTACT INFO -->
+        <div class="info">
+            <div class="row1">
+                <h3>Location</h3>
+                <span>Kamalachi, Kathmandu</span>
+            </div>
+            <div class="row1">
+                <h3>Phone Number</h3>
+                <span>01-4259384</span><br>
+                <span>+977 9873645123</span>
+            </div>
+            <div class="row1">
+                <h3>Email</h3>
+                <span>customerservice@shelby.com.np</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- copyright -->
+        <center>Thank you</center>
+        <center>&copy; Shelby Phones</center>
+    </footer>
+
+    <script  src="./SCRIPT.JS">        
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./Style.css">
+    <style>
+
+        /*CSS PORTION FOR THE CONTENT OF THIS PAGE */
+        /* IMAGE SLIDER */
+        .slider img{
+            width: 100%;
+        }
+
+        .text{
+            margin: 1em 4em;
+            box-shadow: 0em 0em 0.5em;
+            padding: 1em;
+            border-radius: 1em;
+        }
+        
+        /* OUTER BOX FOR AD */
+        .ads{
+            display: flex;
+            width: 100%;
+            justify-content:center;
+        }
+        /* IMAGE IN THE AD */
+
+        .ads .ad1 img{
+            width: 34em;
+            height: 21em;
+            margin: 0em 1em;
+            border-radius: 1em;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- company logo and navigation bar -->
+        <div class="logo">
+            <img src="./Logo/Logo.png" alt="company">
+        </div>
+        <!-- NAV BAR -->
+        <div class="nav">
+            <nav>
+                <a href="./Home.html">Home</a>
+                <a href="./Product.html">Products</a>
+                <a href="./Blog.html">Blog</a>
+                <a href="./Research.html">Research</a>
+                <a href="./Contactus.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        <!-- CONTENT -->
+        <!-- IMG SLIDER -->
+        <div class="slider" onclick="slider()">
+            <img src="./slider/sldr1.jpg" id="sldr1" alt="">
+            <img src="./slider/sldr2.jpg" id="sldr2" alt="" style="display: none;">
+        </div>
+        <!-- OUTER AD-->
+        <div class="text">
+            Shelby store launched in 2022 with the goal of making authentic electronics and accessories accessible to everyone in Nepal. Apple devices, branded Apple accessories (covers, cables for iPhone, iPad, MacBook), docking speakers, Headphones, Amplifiers, Media players, Home theater Speakers, Projectors ,Samsung devices ,all the available brands of mobile phone with latest version and many more!!!
+        </div>
+        <div class="ads">
+            <div class="ad1">
+                <img src="./ads/ad 1.jpg" alt="">
+            </div>
+
+            <div class="ad1">
+                <img src="./ads/ad 2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!--COPYRIGHT-->
+        <center>Thank you</center>
+        <center>&copy; Shelby Phones</center>
+    </footer>
+
+    <script>
+        // JS FOR SLIDER
+        a = true;
+
+        function slider(){
+            if(a == true){
+                document.getElementById('sldr1').style.display = 'none';
+                document.getElementById('sldr2').style.display = 'block';
+                a = false;
+            }else{
+                document.getElementById('sldr1').style.display = 'block';
+                document.getElementById('sldr2').style.display = 'none';
+                a = true;   
+            }
+        }
+    </script>
+</body>
+</html>

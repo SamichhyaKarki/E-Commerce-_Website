@@ -1,0 +1,44 @@
+/* CSS FOR BODY */
+body{
+ margin: 3em;
+}
+
+/* CSS FOR HEADER */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #192436;
+}
+
+/* CSS FOR LOGO */
+header .logo img{
+    margin-right: 5em;
+    height: 9em;
+}
+
+/* CSS FOR NAV BAR */
+header .nav nav{
+    margin-top: 3.5em;
+}
+
+/* CSS FOR NAV LINK */
+header .nav nav a{
+    margin-left: 2em;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+/* HOVER EFFECT FOR NAV */
+header .nav nav a:hover{
+    color: red;
+    transition: 0.5s;
+}
+
+/* CSS FPR CONTENT */
+.content{
+    box-sizing: border-box;
+    overflow: hidden;
+}
